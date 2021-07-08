@@ -6,25 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".InfoPage">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="136dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
-
-        <AutoCompleteTextView
-            android:id="@+id/input_name"
-            android:layout_width="329dp"
-            android:layout_height="118dp" />
-
-        <TextView
-            android:id="@+id/text_name"
-            android:layout_width="189dp"
-            android:layout_height="84dp"
-            android:text="Name:" />
-    </LinearLayout>
-
     <TextView
         android:id="@+id/text_info"
         android:layout_width="33dp"
@@ -39,5 +20,20 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="241dp"
         tools:layout_editor_absoluteY="283dp" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="189dp"
+        android:layout_height="84dp"
+        android:text="Name:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/input_name"
+        android:layout_width="147dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="157dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
