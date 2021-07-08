@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Button help = findViewById(R.id.help);
 
         int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-        mediaPlayer = MediaPlayer.create(this, R.raw.alarm);
+        mediaPlayer = MediaPlayer.create(this, R.raw.music);
         audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, maxVolume, 0);
         help.setOnClickListener(v -> {
             if(help.getText().equals("HELP")){
