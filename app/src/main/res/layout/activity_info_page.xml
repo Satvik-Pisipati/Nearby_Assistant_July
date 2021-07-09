@@ -6,34 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".InfoPage">
 
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="414dp"
+        android:layout_height="148dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="68dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginBottom="65dp"
+                android:text="Name:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <AutoCompleteTextView
+                android:id="@+id/input_name"
+                android:layout_width="215dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="53dp"
+                android:editable="true"
+                android:text="your name please"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.869"
+                app:layout_constraintStart_toEndOf="@+id/text_name"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/text_info"
-        android:layout_width="33dp"
-        android:layout_height="54dp"
-        android:text="Info"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="274dp" />
+        android:layout_width="106dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="196dp"
+        android:text="Info:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <AutoCompleteTextView
         android:id="@+id/input_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="283dp" />
-
-    <TextView
-        android:id="@+id/text_name"
-        android:layout_width="189dp"
-        android:layout_height="84dp"
-        android:text="Name:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="137dp" />
-
-    <AutoCompleteTextView
-        android:id="@+id/input_name"
-        android:layout_width="147dp"
-        android:layout_height="49dp"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:layout_width="219dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="246dp"
+        android:text="Information (age, diseases, contact person)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_info"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
